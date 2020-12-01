@@ -21,7 +21,12 @@ loadData = do
     dat <- readFile "Day1.dat"
     return $ (map read . lines) dat
 
-day1 :: IO ()
-day1 = do
+step1 :: IO ()
+step1 = do
+    dat <- loadData
+    print $ part1 dat
+
+step2 :: IO ()
+step2 = do
     dat <- loadData
     print $ part2 dat
