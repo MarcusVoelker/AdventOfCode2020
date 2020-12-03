@@ -14,5 +14,4 @@ part1 = loadData >>= (print . slopeCheck 3 1)
 part2 :: IO ()
 part2 = do
     dat <- loadData
-    let res = product$ map (\(x,y) -> slopeCheck x y dat) [(1,1),(3,1),(5,1),(7,1),(1,2)]
-    print res
+    print $ product $ map (\(x,y) -> slopeCheck x y dat) [(1,1),(3,1),(5,1),(7,1),(1,2)]
