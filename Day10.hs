@@ -18,29 +18,14 @@ part1 = do
   dat <- loadData
   print $ (\y -> length (filter (== 1) y) * length (filter (== 3) y)) $ diffList dat
 
+c :: Int -> Int -> Int
+c n k = foldr (\i r -> div (r * (n - i + 1)) i) 1 [1 .. k]
+
 count :: Int -> Int
-count 1 = 1
-count 2 = 2
-count 3 = 4
-count 4 = 7
+count x = 2 ^ (x - 1) - sum [c (x - 1) k | k <- [0 .. div (x - 1) 3 - 1]]
 
 part2 :: IO ()
 part2 = do
   dat <- loadData
   let dl = diffList dat
-  print $ product $ map count $ oneSeqs $ dl
-
-test :: [Int]
-test =
-  [ 16,
-    10,
-    15,
-    5,
-    1,
-    11,
-    7,
-    19,
-    6,
-    12,
-    4
-  ]
+  print $ product $ map count $ oneSeqs dl
