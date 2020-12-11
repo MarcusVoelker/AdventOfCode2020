@@ -69,7 +69,23 @@ library d7
 library d8
   exposed-modules:     Day8
   other-modules: Interpreter
-  other-extensions: TemplateHaskell
+  build-depends:       base >=4.14 && <4.15, lens, containers
+  -- hs-source-dirs:
+  default-language:    Haskell2010
+library d9
+  exposed-modules:     Day9
+  other-modules: Interpreter
+  build-depends:       base >=4.14 && <4.15, lens, containers
+  -- hs-source-dirs:
+  default-language:    Haskell2010
+library d10
+  exposed-modules:     Day10
+  other-modules: Interpreter
+  build-depends:       base >=4.14 && <4.15, lens, containers
+  -- hs-source-dirs:
+  default-language:    Haskell2010
+library interpreter
+  exposed-modules:     Interpreter
   build-depends:       base >=4.14 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
