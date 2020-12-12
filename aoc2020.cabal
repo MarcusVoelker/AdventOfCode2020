@@ -80,7 +80,16 @@ library d9
   default-language:    Haskell2010
 library d10
   exposed-modules:     Day10
-  other-modules: Interpreter
+  build-depends:       base >=4.14 && <4.15, lens, containers
+  -- hs-source-dirs:
+  default-language:    Haskell2010
+library d11
+  exposed-modules:     Day11
+  build-depends:       base >=4.14 && <4.15, lens, containers
+  -- hs-source-dirs:
+  default-language:    Haskell2010
+library d12
+  exposed-modules:     Day12
   build-depends:       base >=4.14 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
