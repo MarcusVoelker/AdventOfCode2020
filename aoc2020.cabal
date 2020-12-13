@@ -93,6 +93,11 @@ library d12
   build-depends:       base >=4.14 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
+library d13
+  exposed-modules:     Day13
+  build-depends:       base >=4.14 && <4.15, lens, containers
+  -- hs-source-dirs:
+  default-language:    Haskell2010
 library interpreter
   exposed-modules:     Interpreter
   build-depends:       base >=4.14 && <4.15, lens, containers
