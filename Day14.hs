@@ -6,9 +6,9 @@ import Control.Lens
 import Data.Bits
 import qualified Data.Map as M
 
-data Instr = Mask (Integer, Integer) | Mem Int Integer deriving (Show)
+data Instr = Mask (Integer, Integer) | Mem Integer Integer deriving (Show)
 
-data State = State {_mask :: (Integer, Integer), _memory :: M.Map Int Integer} deriving (Show)
+data State = State {_mask :: (Integer, Integer), _memory :: M.Map Integer Integer} deriving (Show)
 
 makeLenses ''State
 
@@ -23,8 +23,11 @@ runInstr2 :: Instr -> State -> State
 runInstr2 (Mask i) s = s & mask .~ i
 runInstr2 (Mem a i) s = s & memory %~ (\m -> foldr (`M.insert` i) m (instantiate (s ^. mask)))
 
-instantiate :: (Integer, Integer) -> [Int]
-instantiate (z, o) = undefined
+instantiate :: (Integer, Integer) -> [Integer]
+instantiate (z, o) =
+  let count = abs (popCount (complement z .|. o))
+      mask = complement z .|. o
+   in take (2 ^ count) $ map (.&. complement mask) $ iterate (\x -> (x + 1) .|. mask) mask
 
 repX :: Char -> String -> String
 repX _ [] = []
