@@ -103,6 +103,11 @@ library d14
   build-depends:       base >=4.14 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
+executable d15
+  main-is:             Day15.hs
+  build-depends:       base >=4.14 && <4.15, lens, containers
+  -- hs-source-dirs:
+  default-language:    Haskell2010
 library interpreter
   exposed-modules:     Interpreter
   build-depends:       base >=4.14 && <4.15, lens, containers
