@@ -38,5 +38,7 @@ cradle:
       component: "lib:d18"
     - path: "Day19.hs"
       component: "lib:d19"
+    - path: "Day20.hs"
+      component: "lib:d20"
     - path: "Interpreter.hs"
       component: "lib:interpreter"
