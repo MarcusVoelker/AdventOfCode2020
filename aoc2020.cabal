@@ -148,6 +148,11 @@ library d23
   build-depends:       base >=4.13 && <4.15, lens, containers, LParse, data-clist
   -- hs-source-dirs:
   default-language:    Haskell2010
+library d24
+  exposed-modules:     Day24
+  build-depends:       base >=4.13 && <4.15, lens, containers, LParse
+  -- hs-source-dirs:
+  default-language:    Haskell2010
 library interpreter
   exposed-modules:     Interpreter
   build-depends:       base >=4.13 && <4.15, lens, containers
