@@ -21,130 +21,135 @@ library d1
   exposed-modules:     Day1
   --other-modules: Interpreter
   -- other-extensions:
-  build-depends:       base >=4.14 && <4.15,  containers
+  build-depends:       base >=4.13 && <4.15,  containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d2
   exposed-modules:     Day2
   --other-modules: Interpreter
   -- other-extensions:
-  build-depends:       base >=4.14 && <4.15,  containers
+  build-depends:       base >=4.13 && <4.15,  containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d3
   exposed-modules:     Day3
   --other-modules: Interpreter
   -- other-extensions:
-  build-depends:       base >=4.14 && <4.15,  containers
+  build-depends:       base >=4.13 && <4.15,  containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d4
   exposed-modules:     Day4
   --other-modules: Interpreter
   -- other-extensions:
-  build-depends:       base >=4.14 && <4.15,  containers
+  build-depends:       base >=4.13 && <4.15,  containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d5
   exposed-modules:     Day5
   --other-modules: Interpreter
   -- other-extensions:
-  build-depends:       base >=4.14 && <4.15,  containers
+  build-depends:       base >=4.13 && <4.15,  containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d6
   exposed-modules:     Day6
   --other-modules: Interpreter
   -- other-extensions:
-  build-depends:       base >=4.14 && <4.15,  containers
+  build-depends:       base >=4.13 && <4.15,  containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d7
   exposed-modules:     Day7
   --other-modules: Interpreter
   -- other-extensions:
-  build-depends:       base >=4.14 && <4.15,  containers
+  build-depends:       base >=4.13 && <4.15,  containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d8
   exposed-modules:     Day8
   other-modules: Interpreter
-  build-depends:       base >=4.14 && <4.15, lens, containers
+  build-depends:       base >=4.13 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d9
   exposed-modules:     Day9
   other-modules: Interpreter
-  build-depends:       base >=4.14 && <4.15, lens, containers
+  build-depends:       base >=4.13 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d10
   exposed-modules:     Day10
-  build-depends:       base >=4.14 && <4.15, lens, containers
+  build-depends:       base >=4.13 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d11
   exposed-modules:     Day11
-  build-depends:       base >=4.14 && <4.15, lens, containers
+  build-depends:       base >=4.13 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d12
   exposed-modules:     Day12
-  build-depends:       base >=4.14 && <4.15, lens, containers
+  build-depends:       base >=4.13 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d13
   exposed-modules:     Day13
-  build-depends:       base >=4.14 && <4.15, lens, containers
+  build-depends:       base >=4.13 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d14
   exposed-modules:     Day14
-  build-depends:       base >=4.14 && <4.15, lens, containers
+  build-depends:       base >=4.13 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 executable d15
   main-is:             Day15.hs
-  build-depends:       base >=4.14 && <4.15, lens, containers
+  build-depends:       base >=4.13 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d16
   exposed-modules:     Day16
-  build-depends:       base >=4.14 && <4.15, lens, containers
+  build-depends:       base >=4.13 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d17
   exposed-modules:     Day17
-  build-depends:       base >=4.14 && <4.15, lens, containers
+  build-depends:       base >=4.13 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d18
   exposed-modules:     Day18
-  build-depends:       base >=4.14 && <4.15, lens, containers, LParse
+  build-depends:       base >=4.13 && <4.15, lens, containers, LParse
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d19
   exposed-modules:     Day19
-  build-depends:       base >=4.14 && <4.15, lens, containers, LParse
+  build-depends:       base >=4.13 && <4.15, lens, containers, LParse
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d20
   exposed-modules:     Day20
-  build-depends:       base >=4.14 && <4.15, lens, containers, LParse
+  build-depends:       base >=4.13 && <4.15, lens, containers, LParse
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d21
   exposed-modules:     Day21
-  build-depends:       base >=4.14 && <4.15, lens, containers, LParse
+  build-depends:       base >=4.13 && <4.15, lens, containers, LParse
   -- hs-source-dirs:
   default-language:    Haskell2010
 library d22
   exposed-modules:     Day22
-  build-depends:       base >=4.14 && <4.15, lens, containers, LParse
+  build-depends:       base >=4.13 && <4.15, lens, containers, LParse
+  -- hs-source-dirs:
+  default-language:    Haskell2010
+library d23
+  exposed-modules:     Day23
+  build-depends:       base >=4.13 && <4.15, lens, containers, LParse, data-clist
   -- hs-source-dirs:
   default-language:    Haskell2010
 library interpreter
   exposed-modules:     Interpreter
-  build-depends:       base >=4.14 && <4.15, lens, containers
+  build-depends:       base >=4.13 && <4.15, lens, containers
   -- hs-source-dirs:
   default-language:    Haskell2010
