@@ -48,5 +48,7 @@ cradle:
       component: "lib:d23"
     - path: "Day24.hs"
       component: "lib:d24"
+    - path: "Day25.hs"
+      component: "lib:d25"
     - path: "Interpreter.hs"
       component: "lib:interpreter"
